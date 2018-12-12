@@ -6,33 +6,79 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
   </head>
   <body>
-    <nav class="flex items-center justify-between flex-wrap bg-green p-6">
+    <nav class="flex items-center justify-between flex-wrap bg-green p-6 fixed pin-t pin-l pin-r">
       <div class="container mx-auto flex">
-        <div class="flex items-center flex-no-shrink text-white mr-6">
-          <img src="/assets/sherwood-horiz.svg" alt="" width="175">
+      <div class="flex items-center flex-no-shrink text-white mr-6">
+        <img src="/assets/sherwood-horiz.svg" alt="" width="175">
+      </div>
+      <div class="block lg:hidden">
+        <button class="flex items-center px-3 py-2 border rounded text-green-lighter border-green-light hover:text-white hover:border-white">
+          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+        </button>
+      </div>
+      <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+        <div class="text-base lg:flex-grow">
+          <a href="/index.html" class="block mt-4 lg:inline-block lg:mt-0 text-green-lighter hover:text-white mr-4">
+            Home
+          </a>
+          <a href="/matches.html" class="block mt-4 lg:inline-block lg:mt-0 text-green-lighter hover:text-white mr-4">
+            Matches
+          </a>
+          <a href="/project" class="block mt-4 lg:inline-block lg:mt-0 text-green-lighter hover:text-white">
+            Project Page
+          </a>
         </div>
-        <div class="block lg:hidden">
-          <button class="flex items-center px-3 py-2 border rounded text-green-lighter border-green-light hover:text-white hover:border-white">
-            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-          </button>
+        <div>
+          <a href="#" class="inline-block text-base px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-green hover:bg-white mt-4 lg:mt-0">Sign Up</a>
         </div>
-        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-          <div class="text-base lg:flex-grow">
-            <a href="/index.html" class="block mt-4 lg:inline-block lg:mt-0 text-green-lighter hover:text-white mr-4">
-              Home
-            </a>
-            <a href="/matches.html" class="block mt-4 lg:inline-block lg:mt-0 text-green-lighter hover:text-white mr-4">
-              Matches
-            </a>
-            <a href="/project" class="block mt-4 lg:inline-block lg:mt-0 text-green-lighter hover:text-white">
-              Project Page
-            </a>
-          </div>
-          <div>
-            <a href="#" class="inline-block text-base px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-green hover:bg-white mt-4 lg:mt-0">Sign Up</a>
+
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mx-auto px-4 max-w-lg pt-24">
+    <h3 class="font-bold text-xl mb-2">Case studies</h3>
+
+
+    <!-- CARD 1 -->
+    <div class="max-w-lg w-full lg:flex mb-6">
+      <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('https://mendpoverty.org/dev/wp-content/uploads/2011/10/7I2A5936-resized2.jpg')" title="Nottingham Food Bank">
+      </div>
+      <div class="border-r border-b border-l border-grey-light lg:border-l-0 lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+        <div class="mb-8">
+          <div class="text-black font-bold text-xl mb-2">A single database of contacts for Nottingham Food Bank</div>
+          <p class="text-grey-darker text-base">Nottingham Food Bank was manually maintaining and syncing two separate databases of donors and volunteers. A short engagement with digital product studio Postlight revolutionized their contact management.</p>
+        </div>
+        <div class="flex items-center">
+          <img class="w-10 h-10 rounded-full mr-4" src="https://66.media.tumblr.com/avatar_be54f4f33800_128.pnj" alt="Sir Hiss">
+          <div class="text-sm">
+            <p class="text-black leading-none">Sir Hiss</p>
+            <p class="text-grey-dark">Aug 18</p>
           </div>
         </div>
       </div>
-    </nav>
+    </div>
+    <!-- END CARD 1 -->
+
+
+    <!-- CARD 2 -->
+    <div class="max-w-lg w-full lg:flex mb-6">
+      <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('https://tailwindcss.com/img/card-left.jpg')" title="Woman holding a mug">
+      </div>
+      <div class="border-r border-b border-l border-grey-light lg:border-l-0 lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+        <div class="mb-8">
+          <div class="text-black font-bold text-xl mb-2">Transforming engagement in email newsletters</div>
+          <p class="text-grey-darker text-base">The Merry Men sing their way into their community's heart, but they'd been unable to find their way into their community's inbox. A few hours with a marketer and strategist changed that.</p>
+        </div>
+        <div class="flex items-center">
+          <img class="w-10 h-10 rounded-full mr-4" src="https://66.media.tumblr.com/avatar_be54f4f33800_128.pnj" alt="Sir Hiss">
+          <div class="text-sm">
+            <p class="text-black leading-none">Sir Hiss</p>
+            <p class="text-grey-dark">Aug 18</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END CARD 2 -->
   </body>
 </html>
