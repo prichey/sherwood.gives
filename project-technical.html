@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Sherwood
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="flex items-center justify-between flex-wrap bg-green p-6 fixed pin-t pin-l pin-r">
+      <div class="container mx-auto flex px-4 max-w-lg">
+        <div class="flex items-center flex-no-shrink text-white mr-6">
+          <a href="/"><img src="/assets/sherwood-horiz.svg" alt="" width="175"></a>
+        </div>
+        <div class="block lg:hidden">
+          <button class="flex items-center px-3 py-2 border rounded text-green-lighter border-green-light hover:text-white hover:border-white">
+            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+          </button>
+        </div>
+        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+          <div class="text-base lg:flex-grow">
+            <a href="/matches.html" class="no-underline block mt-4 lg:inline-block lg:mt-0 text-green-lighter hover:text-white mr-4">
+              Matches
+            </a>
+          </div>
+          <div>
+            <a href="#" class="inline-block text-base px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-green hover:bg-white mt-4 lg:mt-0 no-underline">Sign Up</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+      <div class="container mx-auto px-4 max-w-lg pt-24">
+        <p class="uppercase text-grey-darker tracking-wide text-xs font-semibold block">
+          A project for
+        <p>
+        <h1 class="mb-8">
+           Nottingham Food Bank
+        </h1>
+
+        <p class="uppercase text-grey-darker tracking-wide text-xs font-semibold block">
+          Status
+        <p>
+        <p class="mb-8">
+          In progress by Postlight Studio
+        </p>
+        <p class="uppercase text-grey-darker tracking-wide text-xs font-semibold block">
+          The Problem
+        <p>
+        <p class="mb-8">
+          We have an on-site form for donators, and that data is manually input into Salesforce for future contacts.  This takes up an immense amount of time and is very error-prone.
+        </p>
+        <p class="uppercase text-grey-darker tracking-wide text-xs font-semibold block">
+          Statement of Work
+        <p>
+        <p class="text-sm italic mt-1 mb-1 text-grey-darker">
+          Submitted November 20th, 2018 by Postlight Studio
+        </p>
+        <p class="mb-8">
+          An integration that connects the on-site form to Salesforce, enabling one single database as a source of truth for donors.
+                    <a href="#" class="inline no-underline text-green">
+            Read full SOW
+            <svg class="inline fill-current opacity-75 h-3 w-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+          </a>
+
+        </p>
+        <p class="uppercase text-grey-darker tracking-wide text-xs font-semibold block">
+          Technical Documentation
+        <p>
+        <p class="text-sm italic mt-1 mb-1 text-grey-darker">
+          Submitted November 20th, 2018 by Postlight Studio
+        </p>
+        <ul class="mb-8">
+          <li class="mbl-0 px-0">Added a callback that is fired upon submission of the Drupal form</li>
+          <li class="mbl-0 px-0">The callback creates a new record in Salesforce</li>
+          <li class="mbl-0 px-0">New submissions also trigger an email alert to the admin (configurable in CMS)</li>
+          <li class="mbl-0 px-0">Salesforce input attempts to de-duplicate records</li>
+        </ul>
+        <p class="uppercase text-grey-darker tracking-wide text-xs font-semibold block">
+          GitHub Link
+        <p>
+        <p class="mb-8">
+          <a href="#" class="no-underline text-green">
+            nottingham-food-bank/donor-link
+          </a>
+        </p>
+        <p class="uppercase text-grey-darker tracking-wide text-xs font-semibold block">
+          Keys and Logins
+        <p>
+        <p class="text-sm italic mt-1 mb-1 text-grey-darker">
+          This sensitive information is only available to this project’s team.
+        </p>
+        <p>
+          <a class="inline-block bg-green-light rounded text-white font-bold py-2 px-4 no-underline" href="#">
+            🔒 Unlock
+          </a>
+        </p>
+      </div>
+  </body>
+</html>
