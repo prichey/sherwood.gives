@@ -7,10 +7,12 @@
   </head>
 
   <body>
+
+  <!-- NAV START -->
     <nav class="flex items-center justify-between flex-wrap bg-green p-6 fixed pin-t pin-l pin-r">
       <div class="container mx-auto flex px-4 max-w-lg">
         <div class="flex items-center flex-no-shrink text-white mr-6">
-          <img src="/assets/sherwood-horiz.svg" alt="" width="175">
+          <a href="/"><img src="/assets/sherwood-horiz.svg" alt="" width="175"></a>
         </div>
         <div class="block lg:hidden">
           <button class="flex items-center px-3 py-2 border rounded text-green-lighter border-green-light hover:text-white hover:border-white">
@@ -19,45 +21,53 @@
         </div>
         <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
           <div class="text-base lg:flex-grow">
-            <a href="/index.html" class="block mt-4 lg:inline-block lg:mt-0 text-green-lighter hover:text-white mr-4">
-              Home
-            </a>
-            <a href="/matches.html" class="block mt-4 lg:inline-block lg:mt-0 text-green-lighter hover:text-white mr-4">
+            <a href="/matches.html" class="no-underline block mt-4 lg:inline-block lg:mt-0 text-green-lighter hover:text-white mr-4">
               Matches
-            </a>
-            <a href="/project" class="block mt-4 lg:inline-block lg:mt-0 text-green-lighter hover:text-white">
-              Project Page
             </a>
           </div>
           <div>
-            <a href="#" class="inline-block text-base px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-green hover:bg-white mt-4 lg:mt-0">Sign Up</a>
+            <a href="#" class="inline-block text-base px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-green hover:bg-white mt-4 lg:mt-0 no-underline">Sign Up</a>
           </div>
         </div>
       </div>
     </nav>
+    <!-- NAV END -->
 
       <div class="container mx-auto px-4 max-w-lg pt-24">
+
+<div class="py-12 text-center">
+    <h1 class="text-5xl">Eyes on the forest <em>and</em> the trees</h1>
+
+<p class="text-xl text-grey-darker mb-2 py-12 leading-normal">Sherwood matches professionals who want to give back with non-profits who need their skills.</p>
+
+<button class="bg-green hover:bg-green-dark text-white font-bold py-6 px-32 rounded text-lg">
+    Sign Up Now
+</button>
+
+</div>
+
+
         <h3 class="font-bold text-xl mb-2 uppercase text-grey-darkest">Case studies</h3>
 
 
       <!-- CARD 1 -->
       <div class="max-w-lg rounded overflow-hidden shadow-lg mb-6">
+        <a href="/project.html" class="no-underline">
         <img class="w-full" src="/img/food-bank.jpg" alt="Sunset in the mountains">
-        <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2">A single database of contacts for Nottingham Food Bank</div>
-          <p class="text-grey-darker text-base">
-      Nottingham Food Bank was manually maintaining and syncing two separate databases of donors and volunteers. A short engagement with digital product studio Postlight revolutionized their contact management.
-          </p>
-        </div>
-        <div class="px-6 py-4">
-          <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#contacts</span>
-          <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#development</span>
-          <span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">#salesforce</span>
-        </div>
+					<div class="px-6 py-4">
+						<div class="font-bold text-xl mb-2 text-black">A single database of contacts for Nottingham Food Bank</div>
+						<p class="text-grey-darker text-base">
+				Nottingham Food Bank was manually maintaining and syncing two separate databases of donors and volunteers. A short engagement with digital product studio Postlight revolutionized their contact management.
+						</p>
+					</div>
+					<div class="px-6 py-4">
+						<span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#contacts</span>
+						<span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker mr-2">#development</span>
+						<span class="inline-block bg-grey-lighter rounded-full px-3 py-1 text-sm font-semibold text-grey-darker">#salesforce</span>
+					</div>
+				</a>
       </div>
 
-      <div class="container mx-auto px-4 max-w-lg pt-24">
-        <h3 class="font-bold text-xl mb-2">Case studies</h3>
 
       <!-- CARD 2 -->
       <div class="max-w-lg rounded overflow-hidden shadow-lg mb-6">
@@ -76,25 +86,5 @@
       </div>
       <!-- END CARD 2 -->
 
-
-    <!-- CARD 2 -->
-    <div class="max-w-lg w-full lg:flex mb-6">
-      <div class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden" style="background-image: url('https://tailwindcss.com/img/card-left.jpg')" title="Woman holding a mug">
-      </div>
-      <div class="border-r border-b border-l border-grey-light lg:border-l-0 lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
-        <div class="mb-8">
-          <div class="text-black font-bold text-xl mb-2">Transforming engagement in email newsletters</div>
-          <p class="text-grey-darker text-base">The Merry Men sing their way into their community's heart, but they'd been unable to find their way into their community's inbox. A few hours with a marketer and strategist changed that.</p>
-        </div>
-        <div class="flex items-center">
-          <img class="w-10 h-10 rounded-full mr-4" src="https://66.media.tumblr.com/avatar_be54f4f33800_128.pnj" alt="Sir Hiss">
-          <div class="text-sm">
-            <p class="text-black leading-none">Sir Hiss</p>
-            <p class="text-grey-dark">Aug 18</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- END CARD 2 -->
   </body>
 </html>
