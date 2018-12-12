@@ -2,21 +2,23 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Sherwood</title>
+    <title>
+      Sherwood
+    </title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
   </head>
   <body>
       <nav class="flex items-center justify-between flex-wrap bg-green p-6">
-        <div class="flex items-center flex-no-shrink text-white mr-6">
+        <div class="flex items-center flex-no-shrink text-white mr-6" class="mb-4">
           <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
           <span class="font-semibold text-xl tracking-tight">Sherwood</span>
         </div>
-        <div class="block lg:hidden">
+        <div class="block lg:hidden" class="mb-4">
           <button class="flex items-center px-3 py-2 border rounded text-green-lighter border-green-light hover:text-white hover:border-white">
             <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
           </button>
         </div>
-        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto" class="mb-4">
           <div class="text-sm lg:flex-grow">
             <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-green-lighter hover:text-white mr-4">
               Docs
@@ -33,5 +35,58 @@
           </div>
         </div>
       </nav>
+      <div class="container px-4 py-4">
+        <h1 class="mb-4">
+          <span class="uppercase text-grey-darker tracking-wide text-xs font-semibold block">
+            A project for
+          </span>
+           Nottingham Food Bank
+        </h1>
+        <h1 class="mb-4">
+          <span class="uppercase text-grey-darker tracking-wide text-xs font-semibold block">
+            Given by
+          </span>
+          Postlight
+        </h1>
+        <a href="#" class="block no-underline mb-4">
+          <div class="p-2 bg-green-darker items-center text-green-lightest leading-none lg:rounded-full flex lg:inline-flex" role="alert">
+            <span class="flex rounded-full bg-green uppercase px-2 py-1 text-xs font-bold mr-3">Complete!</span>
+            <span class="font-semibold mr-2 text-left flex-auto">Shipped on December 12th, 2018. View case study</span>
+            <svg class="fill-current opacity-75 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+          </div>
+        </a>
+        <p class="mb-4">
+          <span class="uppercase text-grey-darker tracking-wide text-xs font-semibold block">
+            The Problem
+          </span>
+          We have an on-site form for donators, and that data is manually input into salesforce for future contacts.  This takes up an immense amount of time and is very error-prone.
+        </p>
+        <p class="mb-4">
+          <span class="uppercase text-grey-darker tracking-wide text-xs font-semibold block">
+            Statement of Work
+          </span>
+          A solution that will tie the on-site form to Salesforce automatically, creating one single database as a source of truth for your donators
+        </p>
+        <p class="mb-4">
+          <span class="uppercase text-grey-darker tracking-wide text-xs font-semibold block">
+            Technical Documentation
+          </span>
+          Sets up a callback hook to update the records and sends the data to salesforce.
+        </p>
+        <p class="mb-4">
+          <span class="uppercase text-grey-darker tracking-wide text-xs font-semibold block">
+            GitHub Link
+          </span>
+          <a href="#" class="no-underline text-green">
+            nottingham-food-bank/donor-link
+          </a>
+        </p>
+        <p class="mb-4">
+          <span class="uppercase text-grey-darker tracking-wide text-xs font-semibold block">
+            Keys and Login
+          </span>
+          <a class="inline-block bg-green-light rounded text-white font-bold py-2 px-4 no-underline" href="#">🔒 Click to unlock</a>
+        </p>
+      </div>
   </body>
 </html>
